@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rmc-ZM-Ztq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Online Resources-->
+        <scene sceneID="rQ1-hv-NbK">
+            <objects>
+                <viewController id="APD-xO-Sab" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zam-6I-2ch"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jR-4e-lI8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vcl-yu-zzr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Online Resources" image="Info_Icon" id="KXL-mi-PoU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IC2-Uf-Oz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="143"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="I2i-hh-MKw">
+            <objects>
+                <viewController id="KSJ-SI-cSE" customClass="MapViewController" customModule="SB_In_Need" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hem-hm-3ji"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ide-My-HEH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eAp-mw-j2E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3T-DB-ISv">
+                                <rect key="frame" x="8" y="547" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button" image="AtUserLocationIcon"/>
+                                <connections>
+                                    <action selector="goToUserLocation:" destination="KSJ-SI-cSE" eventType="touchUpInside" id="gsQ-ff-hfB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map_Icon" id="Dar-bK-yp5"/>
+                    <connections>
+                        <outlet property="goToUserLocationButton" destination="y3T-DB-ISv" id="pJE-du-9Yd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xa-Xw-cRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218.40000000000001" y="-512.29385307346331"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="R8n-Lr-0w8">
+            <objects>
+                <tabBarController id="Rmc-ZM-Ztq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="i81-D6-KGc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KSJ-SI-cSE" kind="relationship" relationship="viewControllers" id="9aW-Iz-bpr"/>
+                        <segue destination="APD-xO-Sab" kind="relationship" relationship="viewControllers" id="uTO-6b-A1j"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cm-ci-NdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1425" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AtUserLocationIcon" width="60" height="60"/>
+        <image name="Info_Icon" width="25" height="25"/>
+        <image name="Map_Icon" width="25" height="25"/>
+    </resources>
+</document>
