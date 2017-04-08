@@ -33,8 +33,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         goToUserLocationButton.layer.cornerRadius = 8
         self.view.bringSubview(toFront: goToUserLocationButton)
         
-        let r = ResourceList()
-        let b = UIButton()
         
     }
 
