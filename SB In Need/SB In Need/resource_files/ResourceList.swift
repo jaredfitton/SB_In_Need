@@ -17,14 +17,16 @@ class ResourceList {
         
         // overnight places
         createResource(name: "Bridge House Emergency Shelter", type: .overNight, contact: "Phone: 805-735-4390", hours: nil, address: "2025 Sweeney Road, Lompoc, 93436", coordinate: CLLocationCoordinate2D(latitude: 34.645353, longitude: -120.427736), description: "Emergency shelter. Referrals for financial, medical, and other services.\n56 beds, emergency food,\nmanaged by Good Samaritan Shelter", image: UIImage(named: "resourceImages/Bridge House Emergency Shelter.png")!)
+
         
         createResource(name: "Casa Esperanza Homeless Center", type: .overNight, contact: "Phone: 805-884-8481", hours: nil, address: "816 Cacique St, SB, 93103", coordinate: CLLocationCoordinate2D(latitude: 34.418844, longitude: -119.676538), description: "Sobriety-based transitional shelter program. Must be clean and sober.", image: UIImage(named: "resourceImages/Casa Esperanza Homeless Center.png")!)
         
-        createResource(name: "New Beginnings Safe Parking Program", type: .overNight, contact: "Phone: 805-845-8492", hours: nil, address: "324 E Carrillo St, C, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.425133, longitude: -119.697569), description: "Safe place to park your vehicle and sleep overnight legally.\nMust have current license, registration & insurance.", image: UIImage(named:"New Beginnings Safe Parking Program.png")!)
+        createResource(name: "New Beginnings Safe Parking Program", type: .overNight, contact: "Phone: 805-845-8492", hours: nil, address: "324 E Carrillo St, C, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.425133, longitude: -119.697569), description: "Safe place to park your vehicle and sleep overnight legally.\nMust have current license, registration & insurance.", image: UIImage(named:"resourceImages/New Beginnings Safe Parking Program.png")!)
         
         createResource(name: "Noah’s Anchorage Youth Crisis Shelter", type: .overNight, contact: "Phone: 805-963-8775, 805-963-7777, 805- 637-6242", hours: nil, address: "301 W. Figueroa St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.418998, longitude: -119.706526), description: "Temporary shelter for youths, ages 10-17", image: UIImage(named: "resourceImages/Noah’s Anchorage Youth Crisis Shelter.png")!)
         
         createResource(name: "Santa Barbara Rescue Mission", type: .overNight, contact: "Phone: 805-966-1316", hours: "Check in:\nWomen : Mon-Sat 4pm. Sun 3pm. Men: Mon-Sat: 6:15pm. Sun: 5:15pm", address: "535 E Yanonali St, SB, 93103", coordinate: CLLocationCoordinate2D(latitude: 34.419117, longitude: -119.684520), description: "Overnight stay and Showers\nBreakfast & Dinner\nChapel 7pm (optional)\nNote: showers, dinner and breakfast available even if not staying overnight", image: UIImage(named: "resourceImages/Santa Barbara Rescue Mission.pg")!)
+
         
         createResource(name: "Transition House Family Shelter", type: .overNight, contact: "Phone: 805-966-9668", hours: "Call M-F 9am-5pm", address: "425 E Cota St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.423025, longitude: -119.691537), description: "Emergency shelter and homelessness prevention for families.\nShelter admittance based on bed availability", image: UIImage(named: "resourceImages/Transition House Family Shelter.png")!)
         
@@ -42,12 +44,13 @@ class ResourceList {
         createResource(name: "St. Michaels Episcopal Churc", type: .food, contact: "Phone: 805-968-8028", hours: "Monday nights from 5-6pm", address: "6586 Picasso Road Isla Vista, 93117", coordinate: CLLocationCoordinate2D(latitude: 34.415332, longitude: -119.858087), description: "Dinner on Mon nights at St. Michaels Episcopal Church", image: UIImage(named: "resourceImages/St. Brigid Fellowship Goleta.png")!)
         
         createResource(name: "Light and Life Goleta", type: .food, contact: "e-mail: llgoleta@gmail.com", hours: "Sun at 12:15 pm", address: "People’s Park, IV, CA 93117", coordinate: CLLocationCoordinate2D(latitude: 34.411681, longitude: -119.855936), description: "Lunch on Sundays", image: UIImage(named: "resourceImages/Light and Life Goleta.png")!) // this is should be fixed 
+
         
         createResource(name: "Alameda Park", type: .food, contact: "Phone: 805-564-5418", hours: "Mon 6:30pm, Wed 5:30pm, Thurs at 6pm", address: "1400 Santa Barbara St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.428288, longitude: -119.705984), description: "Food on certain weekdays.", image: UIImage(named: "resourceImages/Alameda Park.png")!)
 
 
         // empty resource thing
-        //createResource(name: <#T##String#>, type: <#T##ResourceType#>, contact: <#T##String#>, hours: <#T##String?#>, address: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: , longitude: ), description: <#T##String#>, image: UIImage(named: <#T##String#>)!)
+        //createResource(name: <#T##String#>, type: <#T##ResourceType#>, contact: <#T##String#>, hours: <#T##String?#>, address: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: , longitude: ), description: <#T##String#>, image: UIImage(named: <#T##String#>))
     }
     
     

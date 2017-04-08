@@ -33,7 +33,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         goToUserLocationButton.layer.cornerRadius = 8
         self.view.bringSubview(toFront: goToUserLocationButton)
         
+        let resources = ResourceList()
+        let allResources = resources.resourceList
+
         
+        for resource in allResources {
+            let pin = CustomAnnotation(resource: resource)
+            self.mapView.addAnnotation(pin)
+        }
     }
 
     @IBAction func goToUserLocation(_ sender: UIButton) {
@@ -59,7 +66,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         if !(annotation is MKUserLocation) {
             let pin = MKAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
             pin.canShowCallout = true
-            pin.image = #imageLiteral(resourceName: "OverNight_Icon")
+            
+            let a = annotation as! CustomAnnotation
+            
+            if a.resourceType == .food {
+                pin.image = #imageLiteral(resourceName: "Food_Icon")
+            } else if a.resourceType == .overNight {
+                pin.image = #imageLiteral(resourceName: "OverNight_Icon")
+            }
             
             let info = UIButton(type: .infoLight)
             pin.rightCalloutAccessoryView = info
