@@ -10,7 +10,8 @@ import Foundation
 import MapKit
 
 class ResourceList {
-    static var resourceList = [Resource]()
+    
+    var resourceList = [Resource]
     
     init() {
         // empty resource thing
@@ -28,9 +29,11 @@ class ResourceList {
         createResource(name: "Transition House Family Shelter", type: .overNight, contact: "Phone: 805-966-9668", hours: "Call M-F 9am-5pm", address: "425 E Cota St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.423025, longitude: -119.691537), description: "Emergency shelter and homelessness prevention for families.\nShelter admittance based on bed availability", image: UIImage(named: "Transition House Family Shelter.png")!)
     }
     
+    
     func createResource(name: String, type: ResourceType, contact: String, hours: String?, address: String, coordinate: CLLocationCoordinate2D, description: String, image: UIImage){
         ResourceList.resourceList.append(Resource(named: name, ofType: type, withContactInfo: contact, withHours: hours, atAddress: address, atCoordinate: coordinate, withDescription: description, withImage: image))
         print( description)
     }
+    
     
 }

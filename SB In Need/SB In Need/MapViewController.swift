@@ -32,6 +32,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         goToUserLocationButton.layer.cornerRadius = 8
         self.view.bringSubview(toFront: goToUserLocationButton)
+        
+        let r = ResourceList()
+        let b = UIButton()
+        
     }
 
     @IBAction func goToUserLocation(_ sender: UIButton) {
@@ -50,6 +54,21 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             goToUserLocationButton.imageView?.image = #imageLiteral(resourceName: "AtUserLocationIcon")
         } else {
             goToUserLocationButton.imageView?.image = #imageLiteral(resourceName: "NotAtUserLocationIcon")
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if !(annotation is MKUserLocation) {
+            let pin = MKAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
+            pin.canShowCallout = true
+            pin.image = #imageLiteral(resourceName: "OverNight_Icon")
+            
+            let info = UIButton(type: .infoLight)
+            pin.rightCalloutAccessoryView = info
+            
+            return pin
+        } else {
+            return nil
         }
     }
     
