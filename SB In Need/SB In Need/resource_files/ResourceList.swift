@@ -56,7 +56,6 @@ class ResourceList {
     
     func createResource(name: String, type: ResourceType, contact: String, hours: String?, address: String, coordinate: CLLocationCoordinate2D, description: String, image: UIImage){
         resourceList.append(Resource(named: name, ofType: type, withContactInfo: contact, withHours: hours, atAddress: address, atCoordinate: coordinate, withDescription: description, withImage: image))
-        print( description)
     }
     
     

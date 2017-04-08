@@ -53,6 +53,7 @@
 				0988E43B1E996D34003A6EFB /* ResourceList.swift */,
 				0988E43E1E996D80003A6EFB /* Resource.swift */,
 				0988E4401E996D8A003A6EFB /* ResourceType.swift */,
+				0988E4441E997B96003A6EFB /* resourceImages */,
 			);
 			name = Resource_Files;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 				09C61E541E98546500BB772E /* Assets.xcassets */,
 				0988E43D1E996D6C003A6EFB /* Resource_Files */,
 				09C61E591E98546500BB772E /* Info.plist */,
-				0988E4441E997B96003A6EFB /* resourceImages */,
 			);
 			path = "SB In Need";
 			sourceTree = "<group>";

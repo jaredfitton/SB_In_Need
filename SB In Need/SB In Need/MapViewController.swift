@@ -84,6 +84,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        //pointsView = self.storyboard!.instantiateViewController(withIdentifier: "pointsView") as! PointsViewController
+        self.performSegue(withIdentifier: "ResourceInformation", sender: self)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
