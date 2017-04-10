@@ -14,6 +14,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var goToUserLocationButton: UIButton!
     
     var mapView: MKMapView!
+    var resources: Resource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         
         let location = CLLocationCoordinate2D(latitude: 34.4293457, longitude: -119.6965677)
-        let region = MKCoordinateRegionMakeWithDistance(location, 2000, 2000)
+        let region = MKCoordinateRegionMakeWithDistance(location, 3000, 3000)
         mapView.setRegion(region, animated: true)
      
         mapView.showsUserLocation = true
@@ -73,6 +74,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 pin.image = #imageLiteral(resourceName: "Food_Icon")
             } else if a.resourceType == .overNight {
                 pin.image = #imageLiteral(resourceName: "OverNight_Icon")
+            } else if a.resourceType == .medical{
+                pin.image = #imageLiteral(resourceName: "Medical_Icon")
             }
             
             let info = UIButton(type: .infoLight)
@@ -85,19 +88,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        //pointsView = self.storyboard!.instantiateViewController(withIdentifier: "pointsView") as! PointsViewController
-        self.performSegue(withIdentifier: "ResourceInformation", sender: self)
+        let a = view.annotation as! CustomAnnotation
+        self.resources = a.resource
         
+        self.performSegue(withIdentifier: "ResourceInformation", sender: self)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let VC = segue.destination as! ResourceInformationViewController
+        VC.resources = self.resources
+        
     }
-    */
+
 
 }

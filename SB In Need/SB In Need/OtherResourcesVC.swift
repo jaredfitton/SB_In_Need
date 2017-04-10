@@ -28,19 +28,30 @@ class OtherResourcesVC: UIViewController {
     }
 
     @IBAction func buttonsTapped(_ sender: UIButton) {
-        let background = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        background.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.5)
-        self.view.addSubview(background)
-        
-        let scrollView = UIScrollView(frame: CGRect(x: 25, y: 25, width: self.view.frame.width-50, height: self.view.frame.height - 100))
-        scrollView.backgroundColor = UIColor.white
-        self.view.addSubview(scrollView)
-        
-        let closeButton = UIButton(frame: CGRect(x: 20, y: 20, width: 50, height: 50))
-        closeButton.setTitleColor(.black, for: .normal)
-        closeButton.setTitle("close", for: .normal)
-        
-        scrollView.addSubview(closeButton)
+        let buttonTitle = sender.currentTitle!
+        if(buttonTitle == "Domestic Abuse"){
+            print(buttonTitle)
+            UIApplication.shared.open(URL(string: "http://ncadv.org/learn-more/what-is-domestic-violence")!, options: [:], completionHandler: nil)
+        }
+        else if (buttonTitle == "Sobriety Help"){
+            print(buttonTitle)
+            UIApplication.shared.open(URL(string: "http://www.recovery.org/topics/getting-sober-and-drug-free/")!, options: [:], completionHandler: nil)
+        }
+        else if (buttonTitle == "Legal Help"){
+            UIApplication.shared.open(URL(string: "http://www.lafsbc.org")!, options: [:], completionHandler: nil)
+        }
+        else if (buttonTitle == "Employment Help"){ // needs to be changed in storyboard
+            UIApplication.shared.open(URL(string: "https://www.indeed.com/l-Santa-Barbara,-CA-jobs.html")!, options: [:], completionHandler: nil)
+        }
+        else if (buttonTitle == "Long Term Housing"){
+            UIApplication.shared.open(URL(string: "http://hacsb.org")!, options: [:], completionHandler: nil)
+        }
+        else if (buttonTitle == "Child Care"){
+            UIApplication.shared.open(URL(string: "https://www.sbfcca.org/childcare/")!, options: [:], completionHandler: nil)
+        }
+        else{ // senior help
+            UIApplication.shared.open(URL(string: "http://www.aarp.org/aarp-foundation/our-work/income/info-2012/public-benefits-guide-senior-assistance1.html")!, options: [:], completionHandler: nil)
+        }
         
     }
 

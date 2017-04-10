@@ -47,10 +47,30 @@ class ResourceList {
 
         
         createResource(name: "Alameda Park", type: .food, contact: "Phone: 805-564-5418", hours: "Mon 6:30pm, Wed 5:30pm, Thurs at 6pm", address: "1400 Santa Barbara St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.428288, longitude: -119.705984), description: "Food on certain weekdays.", image: UIImage(named: "resourceImages/Alameda Park.png")!)
-
-
+        
+        createResource(name: "Catholic Charities Bulk Food Distribution", type: .food, contact: "Phone: 805 965-7045", hours: "1 bag of food 4th week of every month\nMon of 4th week: 12- 4:30pm\nTues through Fri of 4th week: 8:30am-4:30 pm", address: "609 E. Haley St, SB, 93103", coordinate: CLLocationCoordinate2D(latitude: 34.423843, longitude: -119.688645), description: "Catholic Charities offersother services for families and individuals with addresses and identification.", image: UIImage(named: "resourceImages/Catholic Charities Bulk Food Distribution.png")!)
+        
+        createResource(name: "Catholic Charities in Isla Vista", type: .food, contact: "Phone: 805-965-7045", hours: "Thurs 3:30 – 4:30 pm", address: "6550 Picasso Rd., IV, 93117", coordinate: CLLocationCoordinate2D(latitude: 34.415382, longitude: -119.856705), description: "Bulk food or groceries in Isla Vista", image: UIImage(named: "resourceImages/Catholic Charities in Isla Vista.png")!)
+        
+        createResource(name: "Food For Angels, Isla Vista", type: .food, contact: "Phone: 805-588-2681", hours: "The 1st and 3rd Mon of each month, 4-6pm", address: "781 Embarcadero Del Mar, IV, 93117", coordinate: CLLocationCoordinate2D(latitude: 34.415423, longitude: -119.857381), description: "Distribution of bulk food at the parking lot of SB Hillel in IV", image: UIImage(named: "resourceImages/Food For Angels, Isla Vista.png")!)
+        
+        createResource(name: "Grace Lutheran Church", type: .food, contact: "Phone: 805 687-2628", hours: nil, address: "3869 State St, SB, 93105", coordinate: CLLocationCoordinate2D(latitude: 34.439726, longitude: -119.749611), description: "Bulk food or groceries", image: UIImage(named: "resourceImages/Grace Lutheran Church.png")!)
+        
+        createResource(name: "Unity Shoppe", type: .food, contact: "Phone: 805-965-4122", hours: "Once a year", address: "1219 State St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.423543, longitude: -119.705406), description: "Free Food Store\nRequires referral from approved agency & ID", image: UIImage(named: "resourceImages/Unity Shoppe.png")!)
+        
+        createResource(name: "SB Cottage Hospital Emergency Room", type: .medical, contact: "911 for medical crisis\nPhone: 877- 247-3260", hours: "24/7", address: "320 W. Pueblo St, SB, 93101", coordinate: CLLocationCoordinate2D(latitude: 34.429456, longitude: -119.723870), description: "Your local Cottage Hospitol E.R.", image: UIImage(named: "resourceImages/SB Cottage Hospital Emergency Room.png")!)
+        
+        createResource(name: "American Indian Health and Services", type: .medical, contact: "Phone: 805-681-7144", hours: "Mon-Thurs 8am-6pm, Fri 8am-5pm", address: "4141 State St. A-3, SB, 93110", coordinate: CLLocationCoordinate2D(latitude: 34.440007, longitude: -119.761455), description: "Serves people of all ethnicities.\nBehavioral health counseling, community health, family practice, internal medicine, pediatrics, podiatry, substance abuse counseling", image: UIImage(named: "resourceImages/American Indian Health and Services.png")!)
+        
+        
+        createResource(name: "Lompoc Clinic", type: .medical, contact: "Phone: (805) 735-2846", hours: nil, address: "425 W Centeral Ave, Ste 201.", coordinate: CLLocationCoordinate2D(latitude: 34.661269, longitude: -120.461719), description: "One of Santa Barbara's Community Health Centers", image: UIImage(named: "resourceImages/Lompoc Clinic.png")!)
+        
+        createResource(name: "Salvation Army", type: .medical, contact: "Phone: (805) 451-3898", hours: "Mon 11 am-1:30 pm", address: "200 W Cook St, SM, 93458", coordinate: CLLocationCoordinate2D(latitude: 34.949577, longitude: -120.438198), description: "Santa Maria Mobile Health Unit: Immediate care & health screenings", image: UIImage(named: "resourceImages/Salvation-Army.jpg")!)
+        
+        createResource(name: "Salvation Army", type: .medical, contact: "Phone: (805) 451-3898", hours: "Wed 8:30am-1:30 pm", address: "200 W Willams St, SM, CA", coordinate: CLLocationCoordinate2D(latitude: 34.969684, longitude: -120.437387), description: "Santa Maria Mobile Health Unit: Immediate care & health screenings", image: UIImage(named: "resourceImages/Salvation-Army.jpg")!)
+        
         // empty resource thing
-        //createResource(name: <#T##String#>, type: <#T##ResourceType#>, contact: <#T##String#>, hours: <#T##String?#>, address: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: , longitude: ), description: <#T##String#>, image: UIImage(named: <#T##String#>))
+        //createResource(name: <#T##String#>, type: <#T##ResourceType#>, contact: <#T##String#>, hours: <#T##String?#>, address: <#T##String#>, coordinate: CLLocationCoordinate2D(latitude: , longitude: ), description: <#T##String#>, image: UIImage(named: "resourceImages/")!)
     }
     
     

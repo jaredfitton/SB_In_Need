@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		091890C91E99865500FBC24B /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091890C81E99865500FBC24B /* CustomAnnotation.swift */; };
+		091890CD1E99A0C900FBC24B /* ResourceInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091890CC1E99A0C900FBC24B /* ResourceInformationViewController.swift */; };
 		094938CD1E9932A100AAA429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094938CC1E9932A100AAA429 /* MapViewController.swift */; };
 		0988E43C1E996D34003A6EFB /* ResourceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988E43B1E996D34003A6EFB /* ResourceList.swift */; };
 		0988E43F1E996D80003A6EFB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988E43E1E996D80003A6EFB /* Resource.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		091890C81E99865500FBC24B /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		091890CC1E99A0C900FBC24B /* ResourceInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceInformationViewController.swift; sourceTree = "<group>"; };
 		094938CC1E9932A100AAA429 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0988E43B1E996D34003A6EFB /* ResourceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceList.swift; path = resource_files/ResourceList.swift; sourceTree = "<group>"; };
 		0988E43E1E996D80003A6EFB /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = resource_files/Resource.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				09C61E4D1E98546500BB772E /* AppDelegate.swift */,
 				09C61E4F1E98546500BB772E /* OtherResourcesVC.swift */,
 				094938CC1E9932A100AAA429 /* MapViewController.swift */,
+				091890CC1E99A0C900FBC24B /* ResourceInformationViewController.swift */,
 				091890C81E99865500FBC24B /* CustomAnnotation.swift */,
 				09C61E511E98546500BB772E /* Main.storyboard */,
 				09C61E561E98546500BB772E /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				09C61E4E1E98546500BB772E /* AppDelegate.swift in Sources */,
 				0988E4411E996D8A003A6EFB /* ResourceType.swift in Sources */,
 				091890C91E99865500FBC24B /* CustomAnnotation.swift in Sources */,
+				091890CD1E99A0C900FBC24B /* ResourceInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
